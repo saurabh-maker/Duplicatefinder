@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV and XLSX Comparison Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV and XLSX Comparison Tool</h1>
+        <input type="file" id="file1" accept=".csv, .xlsx" />
+        <input type="file" id="file2" accept=".csv, .xlsx" />
+        <button id="compare">Compare</button>
+        <p id="status">Select files and click "Compare" to start.</p>
+        <div id="progress-container">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+       
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4 50%, #e0e0e0 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #4caf50;
+    background: #e0f7e9;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+#status {
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #4caf50;
+}
+
+#progress-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0;
+    transition: width 0.4s;
+    border-radius: 10px;
+}
+
+#progress-text {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+#results {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+#results table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#results th, #results td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#results th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 600;
+}
+
+#results tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#results tr:hover {
+    background-color: #e0f7e9;
+}
